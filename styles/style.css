@@ -1,0 +1,302 @@
+body {
+  font-family: 'Montserrat', cursive;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #100E0E;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+    width: 110%; 
+  }
+
+header div {
+    background-color: #fff;
+    margin-top: -10px;
+    margin-left: 0px;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1;
+    box-shadow: 0px 0px 10px #D9D9D9;
+  }
+
+h1 a {
+  font-size: 32px;
+}
+
+header h1 img {
+  height: 40px;
+}
+
+header h1 {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+}
+
+header nav {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+header nav a {
+  color: #100E0E;
+  text-decoration: none;
+  display: table-cell;
+  height: 40px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+
+.hero {
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.hero div {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: 'Rock 3D', cursive;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+.cardgrid {
+  width:  100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,250px);
+  place-content: center;
+  grid-gap: 16px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+
+
+.flip-card {
+  height: 350px;
+  perspective: 1000px;
+  margin-bottom: 10px;
+}
+
+
+.flip-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  width: 25%;
+  position: absolute;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+
+}
+
+
+.flip-card-back {
+  width: 100%;
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px #D9D9D9; 
+
+
+}
+
+.flip-card-back div {
+  height: 350px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  align-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.flip-card-front {
+  box-shadow: 2px 2px 10px #D9D9D9; 
+  background-color: #fff;
+}
+
+.flip-card-front img {
+  margin-bottom: -10px;
+  border-radius: 6px;
+  width: 400%;
+  box-shadow: 2px 2px 10px #D9D9D9; 
+
+}
+
+
+
+
+
+
+
+.about {
+    clear: both;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    max-width: 784px;
+    margin: auto;
+    align-self: center;
+
+}
+
+
+.about div div img {
+  float: left;
+  width: 32%;
+  box-shadow: 2px 2px 10px #D9D9D9;
+  border-radius: 6px;
+}
+
+.about .copy {
+  float: right;
+  width: 68%;
+}
+
+.about h2 {
+  font-family: 'Rock 3D', cursive;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+
+.about div div h2 {
+  text-align: left;
+  padding-left: 24px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.about div div p {
+  color: #100E0E;
+  text-align: left;
+  padding-left: 24px;
+  overflow: hidden;
+}
+
+
+footer {
+  width:  100%;
+  clear: both;
+  float: left;
+  background-color: #ffffff;
+  padding: 0px 40px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+
+footer p {
+  float: right;
+  font-size: 14px;
+  color: #100E0E;
+  font-weight: 700;
+}
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 780px) {
+
+
+.about div div p {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.about div div h2 {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.about div div {
+  clear: both;
+  max-width: 520px;
+  width:  520px%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.about div div img {
+  clear: both;
+  width: 520px;
+  max-width: 520px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+}
+
+@media screen and (max-width: 516px) {
+
+
+.about div div {
+  clear: both;
+  max-width: 252px;
+  width:  252px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .about div div img {
+  clear: both;
+  width: 252px;
+  max-width: 252px;
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+}
+
+}
+
+ 
